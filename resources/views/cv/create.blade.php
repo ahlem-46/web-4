@@ -3,7 +3,7 @@
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-        <form action="{{url('cvs')}}" method="post">
+        <form action="{{url('cvs')}}" method="post" enctype="multipart/form-data">
             @csrf
             <div class="form-groupe " >
             <label for="">Titer</label>
@@ -26,9 +26,10 @@
                 <label for="">Image</label>
                 <input name="image" type="file" class="form-control">
             </div>
+        <br>
             
             <div class="form-groupe">
-            <input type="submit" class="form-control btn  btn-primary" value="PUT">
+            <input type="submit" class="form-control btn  btn-primary" value="Enregistrer">
 
             </div>
 

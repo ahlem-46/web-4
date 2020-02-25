@@ -16,7 +16,7 @@
 Route::get('/', function () {
    return view('welcome');
 });
-Route::get('cvs','cvController@index');
+Route::get('cvs/index','cvController@index');
 Route::get('cvs/create','cvController@create');
 Route::post('cvs','cvController@store');
 Route::get('cvs/{id}','cvController@update');
