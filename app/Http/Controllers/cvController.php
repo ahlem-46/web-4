@@ -18,7 +18,7 @@ public function   store(Request $request ){
 
    $cv->titre = $request->input('titre');
    $cv->presentation = $request->input('presentation');
-   
+   $cv->pre = $request->input('pre');
    $cv->save();
 
 }
