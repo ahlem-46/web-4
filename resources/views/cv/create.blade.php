@@ -1,13 +1,13 @@
-
-
+@extends('layouts.master')
+@section('content')
 <div class="container">
     <div class="row">
         <div class="col-md-12">
         <form action="{{url('cvs')}}" method="post">
             @csrf
-            <div class="form-groupe">
-            <label for="">Titer</label>
-            <input name='titre' type="text" class="form-control">
+            <div class="form-groupe row" >
+            <label for=""  class="col-md-4">Titer</label>
+            <input name='titre' type="text" class="form-control col-md-8">
             </div>
 
 
@@ -32,3 +32,4 @@
     </div>
 </div>
 
+@endsection
