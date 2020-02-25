@@ -17,8 +17,8 @@ class CreateCvsTable extends Migration
             $table->bigIncrements('id');
              $table->string('titre',150);
               $table->string('presentation');
-              
-              $table->string('pre');
+              $table->string('email')->unique();
+              $table->string('image');
 
             $table->timestamps();
         });

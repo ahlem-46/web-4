@@ -18,7 +18,9 @@ public function   store(Request $request ){
 
    $cv->titre = $request->input('titre');
    $cv->presentation = $request->input('presentation');
-   $cv->pre = $request->input('pre');
+   $cv->email = $request->input('email');
+   $cv->image = $request->input('image');
+
    $cv->save();
 
 }
