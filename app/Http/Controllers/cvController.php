@@ -10,8 +10,13 @@ use Illuminate\Support\Facades\File;
 class cvController extends Controller
 {
    public function  index(){
+<<<<<<< Updated upstream
    	$cvs=Ahlem::all();
     return view('cv.index')->with("cv",$cvs);
+=======
+      $listcv=Ahlem::all();
+      return view('cv.index',['cvs'=>$listcv]);
+>>>>>>> Stashed changes
    }
 
 public function  create(){

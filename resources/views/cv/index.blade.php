@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 @extends('layouts.master')
 @section('content')
 <table id="myTable" class="table">
@@ -43,4 +44,9 @@ function myFunction() {
   }
 }
 </script>
+=======
+@extends('layouts.app')
+@section('content')
+    
+>>>>>>> Stashed changes
 @endsection
